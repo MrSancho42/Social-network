@@ -1,5 +1,5 @@
 # Social Network API
-This project is an API written with Python for social network that allows to register users, create posts and like them.
+This project is an API written with Python for the social network that allows to register users, create posts, and like them.
 
 ## Built with
 * [Django REST](https://www.django-rest-framework.org/)
@@ -9,14 +9,14 @@ This project is an API written with Python for social network that allows to reg
 
 ## About Project
 ### Project Structure
-This project encludes folders whish are separate functional parts of project:
+This project includes consists of folders which are separate functional parts of the project, that includes:
 
-* `social_network/` encludes main settings;
-* `users/` encludes users model `User` with it's views, serializers and urls;
-* `post/` encludes posts model `Post` with post's likes model `PostLike` with their views, serializers and urls;
+* `social_network/` - main settings;
+* `users/` - users model `User` with its views, serializers, and urls;
+* `post/` - posts model `Post` with posts, likes model `PostLike` with their views, serializers, and urls.
 
 ### Endpoints
-In this project exists API resources:
+This project contains the following API resources:
 
 #### Main resources:
 * `api/token/` - for logining and creating JWT token
@@ -37,13 +37,13 @@ In this project exists API resources:
 ## Getting Started
 ### Environment Setup
 
-For running this API locally you shold have installed Python.
+For running this API locally you should have installed Python.
 
-After creating Python virtual environment with `python -m venv /venv`, running it and copied this project install all requirements:
+After creating Python virtual environment with `python -m venv /venv`, running it, and copying this project install all requirements:
 ```bash
 pip install -r requirements.txt
 ```
-Go to `server/` folder and run API after applying migrations and creating superuser:
+Go to the `server/` folder and run API after applying migrations and creating superuser:
 ```bash
 python manage.py migrate
 python manage.py createsuperuser
@@ -51,4 +51,4 @@ python manage.py runserver
 ``` 
 
 ### Database setup
-For cteating Postgres database you need to write change `DATABASES` config in social_network/settings.py
+For creating a Postgres database you need to create a database locally and change the `DATABASES` config in `social_network/settings.py`.
